@@ -4,6 +4,7 @@
         <title>The code review</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -19,6 +20,8 @@
             <div class="topborderline"></div>
         </header>
 
+
+    <form>
         <div class="contactinfo">
            <fieldset>
             <legend>Contact Information</legend>
@@ -43,11 +46,28 @@
 
             <label for="user-zip">Zip Code</label>
             <input type="text" class="zipinput" id="user-zip" name="user-zip">
-          
-
            </fieldset> 
         </div>
 
+        <div class="bottomborderline"></div>
+        <div class="selectnewsletter">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+                
+                <input type="checkbox" id="htmlnews" name="htmlnews">
+                <label for="htmlnews">HTML News</label> <br>
+
+                <input type="checkbox" id="cssnews" name="cssnews">
+                <label for="cssnews">CSS News</label> <br>
+
+                <input type="checkbox" id="jsnews" name="jsnews">
+                <label for="jsnews">Javascript News</label>
+                
+                
+            </fieldset>
+        </div>
+    </form>
     </body>
 
 </html>

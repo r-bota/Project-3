@@ -1,61 +1,100 @@
-
-
-.banner {
-    background: blue;
-    text-align: center;
+body {
+    font-family: 'Mukta', sans-serif;
 }
 
-.subheader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;  
-    flex-wrap: wrap;
-   
-}
-
-
-.topborderline {
-    text-align: center;
-    border-top: solid 2px red;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    width: 80%;
-}
-.contactinfo {
-    display: flex;
-    justify-content: center;
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
 fieldset {
     border: none;
-    background-color: cyan;
-    min-width: 70vw;
+    min-width: 90vw;
 }
 
-input,
-label {
+legend {
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(57, 68, 100);
+}
+
+::placeholder {
+    color: rgb(112, 112, 112);
+    text-align: right;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.banner {
+    background: rgb(29, 123, 177);
+    color: floralwhite;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.subheader {
+    text-align: center;
+   /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;  
+    flex-wrap: wrap; */
+}
+
+.subheader h2 {
+    margin-top: 25px;
+} 
+
+.subheader h3 {
+    color: rgb(156, 156, 156);
+}
+
+.topborderline {
+    border-top: solid 2px rgb(0, 0, 0);
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 90vw;
+}
+.contactinfo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contactinfo input,
+.contactinfo label {
     display: block;
+    color: rgb(71, 71, 71);
 }
 
-label {
+.contactinfo label {
     padding-bottom: 8px;
     padding-top: 8px;
+    font-size: 1.3em;
 }
-input {
-    background: rgb(193, 213, 250);
+
+.contactinfo input {
+    width: 100%;
+    background: rgb(230, 230, 230);
     border: none;
     padding: 15px;
 }
 
-
-
-/*
-input[type="text"] {
-    background: chartreuse;
-}
-*/
-
 .zipinput {
     max-width: 30%;
 }
+
+.bottomborderline {
+    border-top: solid 2px rgb(0, 0, 0);
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.selectnewsletter {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
