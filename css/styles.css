@@ -9,17 +9,21 @@ body {
 
 .subheader {
     text-align: center;
+    
 }
 
 .contactinfo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
 }
 
 input,
 label {
-    flex-grow: 5;
+    display: block;
 }
 
 input {
