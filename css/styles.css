@@ -94,7 +94,30 @@ legend {
 .selectnewsletter {
     display: flex;
     justify-content: center;
-    
 }
 
+.selectnewsletter p {
+    font-size: 1.4em;
+}
 
+.selectnewsletter label {
+    font-size: 1.3em;
+    padding-left: 8px;
+}
+
+.selectnewsletter input[type="checkbox"],
+.selectnewsletter input[type="radio"] {
+    margin-bottom: 8px;
+}
+
+.selectnewsletter input[type="text"] {
+    width: 100%;
+    background: rgb(230, 230, 230);
+    border: none;
+    padding: 15px;
+}
+
+.selectnewsletter label[for="other"]  {
+   color: red;
+
+}
