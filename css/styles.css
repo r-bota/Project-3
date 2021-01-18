@@ -37,7 +37,6 @@ input {
 
 .subheader {
     text-align: center;
-  
 }
 
 .subheader h2 {
@@ -56,9 +55,8 @@ input {
 }
 .contactinfo {
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 .contactinfo input,
@@ -70,7 +68,8 @@ input {
     font-size: 1.3em;
 }
 
-.contactinfo input {
+.contactinfo input,
+.contactinfo select {
     width: 100%;
     background: rgb(230, 230, 230);
     border: none;
@@ -82,11 +81,15 @@ input {
 
 .contactinfo input:focus {
     background-color: rgb(255, 255, 255);
-    
 }
 
 .contactinfo input#user-zip {
     width: 30%;
+}
+
+.contactset {
+    display: flex;
+    flex-direction: column;
 }
 
 .bottomborderline {
@@ -151,10 +154,22 @@ footer p {
 @media screen and (min-width:768px) {
     .contactset {
         max-width: 650px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    .contactset label {
+        float: left;
+        width: 30%;
+    }
+    .contactset input,
+    .contactset select {
+        
+        width: 70%;
+    }
+
     .newsletterfield {
         width: 650px;
-        
     }
 
     .topborderline {
@@ -166,7 +181,6 @@ footer p {
     }
 
     h1 {
-        padding: 10px;
-        
+        padding: 10px;  
     }
 }
