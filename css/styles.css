@@ -31,7 +31,7 @@ input {
 
 .banner {
     background: rgb(118, 29, 177);
-    color: rgb(255, 250, 240);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -53,6 +53,11 @@ input {
     margin: 0 auto;
     width: 90vw;
 }
+
+form {
+    background-color: blanchedalmond;
+}
+
 .contactinfo {
     display: flex;
     padding-bottom: 20px;
@@ -74,23 +79,20 @@ input {
     background: rgb(230, 230, 230);
     border: none;
     padding: 18px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 .contactinfo input:focus {
     background-color: rgb(255, 255, 255);
+    
 }
 
 .contactinfo input#user-zip {
     width: 30%;
 }
 
-.contactset {
-    display: flex;
-    flex-direction: column;
-}
 
 .bottomborderline {
     border-top: solid 2px rgb(0, 0, 0);
@@ -153,19 +155,22 @@ footer p {
 
 @media screen and (min-width:768px) {
     .contactset {
+        display: flex;
         max-width: 650px;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+   
+    
     .contactset label {
         float: left;
-        width: 30%;
+        width: 25%;
+        margin-top: 35px;
+        
     }
     .contactset input,
     .contactset select {
-        
-        width: 70%;
+        width: 75%;
     }
 
     .newsletterfield {
