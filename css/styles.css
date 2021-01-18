@@ -62,6 +62,10 @@ input {
     justify-content: center;
 }
 
+.contactinfo legend {
+    margin-bottom: 10px;
+}
+
 .contactinfo input,
 .contactinfo label {
     color: rgb(71, 71, 71);
@@ -112,11 +116,19 @@ input {
 .selectnewsletter label {
     font-size: 1.3em;
     padding-left: 8px;
+    transform: 0.2s;
 }
 
 .selectnewsletter input[type="checkbox"],
 .selectnewsletter input[type="radio"] {
     margin-bottom: 12px;
+    transition: 0.2s;
+}
+
+.selectnewsletter label:hover,
+.selectnewsletter input[type="checkbox"]:hover,
+.selectnewsletter input[type="radio"]:hover {
+    transition: scale(1.05);
 }
 
 .selectnewsletter input[value="plainformat"] {
