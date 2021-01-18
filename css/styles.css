@@ -24,10 +24,11 @@ input {
 }
 
 ::placeholder {
-    color: rgb(112, 112, 112);
+    color: rgba(0, 0, 0, 0.356);
     text-align: right;
     text-transform: capitalize;
     font-style: italic;
+   padding-right: 10px;
 }
 
 .banner {
