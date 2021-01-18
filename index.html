@@ -21,9 +21,9 @@
         </header>
 
 
-    <form>
+    <form id="userform">
         <div class="contactinfo">
-           <fieldset>
+           <fieldset class="contactset">
             <legend>Contact Information</legend>
             <label for="user-name">Full Name</label>
             <input type="text" id="user-name" name="user-name" placeholder="required">
@@ -44,24 +44,24 @@
             <label for="user-email">State</label> 
             <input type="text" id="user-state" name="user-state">
 
-            <label for="user-zip">Zip Code</label>
-            <input type="text" class="zipinput" id="user-zip" name="user-zip">
+            <label for="user-zip">Zip Code</label> <br>
+            <input type="text" id="user-zip" name="user-zip">
            </fieldset> 
         </div>
 
         <div class="bottomborderline"></div>
         <div class="selectnewsletter">
-            <fieldset>
+            <fieldset class="newsletterfield">
                 <legend>Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
                 
-                <input type="checkbox" id="htmlnews" name="htmlnews">
+                <input type="checkbox" id="htmlnews" name="newstype">
                 <label for="htmlnews">HTML News</label> <br>
 
-                <input type="checkbox" id="cssnews" name="cssnews">
+                <input type="checkbox" id="cssnews" name="newstype">
                 <label for="cssnews">CSS News</label> <br>
 
-                <input type="checkbox" id="jsnews" name="jsnews">
+                <input type="checkbox" id="jsnews" name="newstype">
                 <label for="jsnews">Javascript News</label>
 
                 <p>Newsletter format</p>
@@ -73,11 +73,17 @@
                 <label for="plainformat">Plain text</label> <br>
 
                 <label for="other">Other topics you'd like to hear about</label>
-                <input type="text" id="other" name="other">
-
+                <textarea id="other" name="other" form="userform" rows="4"></textarea>
+                <button type="submit" form="userform">Sign Up</button>
             </fieldset>
         </div>
+            
+        
     </form>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
     </body>
 
 </html>

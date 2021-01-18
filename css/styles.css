@@ -4,18 +4,22 @@ body {
 
 h1 {
     margin: 0;
-    padding: 0;
+    padding: 30px;
+    font-size: 3em;
 }
 
 fieldset {
-    border: none;
-    min-width: 90vw;
+    border: none;   
 }
 
 legend {
     font-weight: bold;
     font-size: 2em;
-    color: rgb(57, 68, 100);
+    color: rgb(61, 37, 75);
+}
+
+input {
+    font-size: 1.2em;
 }
 
 ::placeholder {
@@ -26,19 +30,14 @@ legend {
 }
 
 .banner {
-    background: rgb(29, 123, 177);
-    color: floralwhite;
-    text-shadow: 1px 1px black;
+    background: rgb(118, 29, 177);
+    color: rgb(255, 250, 240);
     text-align: center;
 }
 
 .subheader {
     text-align: center;
-   /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;  
-    flex-wrap: wrap; */
+  
 }
 
 .subheader h2 {
@@ -57,19 +56,17 @@ legend {
 }
 .contactinfo {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding-bottom: 20px;
 }
 
 .contactinfo input,
 .contactinfo label {
-    display: block;
     color: rgb(71, 71, 71);
 }
 
 .contactinfo label {
-    padding-bottom: 8px;
-    padding-top: 8px;
     font-size: 1.3em;
 }
 
@@ -77,11 +74,19 @@ legend {
     width: 100%;
     background: rgb(230, 230, 230);
     border: none;
-    padding: 15px;
+    padding: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.zipinput {
-    max-width: 30%;
+.contactinfo input:focus {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.contactinfo input#user-zip {
+    width: 30%;
 }
 
 .bottomborderline {
@@ -94,6 +99,7 @@ legend {
 .selectnewsletter {
     display: flex;
     justify-content: center;
+    
 }
 
 .selectnewsletter p {
@@ -107,17 +113,60 @@ legend {
 
 .selectnewsletter input[type="checkbox"],
 .selectnewsletter input[type="radio"] {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
-.selectnewsletter input[type="text"] {
+.selectnewsletter input[value="plainformat"] {
+    margin-bottom: 20px;
+}
+
+.selectnewsletter textarea {
     width: 100%;
     background: rgb(230, 230, 230);
     border: none;
-    padding: 15px;
+    padding: 15px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.selectnewsletter label[for="other"]  {
-   color: red;
+button {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    font-size: 2em;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    border-radius: 5px;
+}
+ 
+footer p {
+    text-align: center;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    margin-bottom: 30px;
+}
 
+@media screen and (min-width:768px) {
+    .contactset {
+        max-width: 650px;
+    }
+    .newsletterfield {
+        width: 650px;
+        
+    }
+
+    .topborderline {
+        width: 650px;
+    }
+    
+    .bottomborderline {
+        width: 650px;
+    }
+
+    h1 {
+        padding: 10px;
+        
+    }
 }
