@@ -1,5 +1,6 @@
 body {
     font-family: 'Mukta', sans-serif;
+   
 }
 
 h1 {
@@ -54,10 +55,6 @@ input {
     width: 90vw;
 }
 
-form {
-    background-color: blanchedalmond;
-}
-
 .contactinfo {
     display: flex;
     padding-bottom: 20px;
@@ -86,7 +83,7 @@ form {
 
 .contactinfo input:focus {
     background-color: rgb(255, 255, 255);
-    
+    border: solid 2px rgb(0, 241, 80);
 }
 
 .contactinfo input#user-zip {
@@ -145,12 +142,16 @@ button {
     background-color: rgb(0, 132, 255);
     border-radius: 5px;
 }
- 
+
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+}
+
 footer p {
     text-align: center;
     font-style: italic;
     color: rgb(146, 146, 146);
-    margin-bottom: 30px;
 }
 
 @media screen and (min-width:768px) {
