@@ -16,7 +16,7 @@ fieldset {
 legend {
     font-weight: bold;
     font-size: 2em;
-    color: rgb(61, 37, 75);
+    color: rgb(0, 0, 0);
 }
 
 input {
@@ -28,11 +28,12 @@ input {
     text-align: right;
     text-transform: capitalize;
     font-style: italic;
-   padding-right: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .banner {
-    background: rgb(118, 29, 177);
+    background: rgb(66, 131, 228);
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -68,6 +69,8 @@ input {
 
 .contactset label {
     font-size: 1.3em;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .contactset input,
@@ -76,14 +79,15 @@ input {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    color:rgb(0, 119, 255);
 }
 
 .contactset input:focus,
 .contactset select:focus,
 .newsletterfield textarea:focus {
     background-color: rgb(217, 255, 252);
-    border: solid 2px rgb(0, 241, 80);
-    color:rgb(43, 129, 226);
+    border: solid 1px rgb(255, 166, 0);
+    
 }
 
 .contactset input#user-zip {
@@ -134,7 +138,7 @@ input {
     width: 100%;
     background: rgb(230, 230, 230);
     border: none;
-      
+    color:rgb(0, 119, 255);
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
