@@ -56,45 +56,45 @@ input {
     width: 90vw;
 }
 
-.contactinfo {
-    display: flex;
-    padding-bottom: 20px;
-    justify-content: center;
-}
 
-.contactinfo legend {
+.contactset legend {
     margin-bottom: 10px;
 }
 
-.contactinfo input,
-.contactinfo label {
+.contactset input,
+.contactset label {
     color: rgb(71, 71, 71);
 }
 
-.contactinfo label {
+.contactset label {
     font-size: 1.3em;
 }
 
-.contactinfo input,
-.contactinfo select {
-    width: 100%;
+.contactset input,
+.contactset select {
     background: rgb(230, 230, 230);
     border: none;
-    padding: 18px;
-    margin-top: 15px;
-    margin-bottom: 10px;
     border-radius: 5px;
+    padding: 10px;
 }
 
-.contactinfo input:focus {
-    background-color: rgb(255, 255, 255);
+.contactset input:focus,
+.contactset select:focus,
+.newsletterfield textarea:focus {
+    background-color: rgb(217, 255, 252);
     border: solid 2px rgb(0, 241, 80);
+    color:rgb(43, 129, 226);
 }
 
-.contactinfo input#user-zip {
+.contactset input#user-zip {
     width: 30%;
 }
 
+.contactset .row {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .bottomborderline {
     border-top: solid 2px rgb(0, 0, 0);
@@ -134,7 +134,7 @@ input {
     width: 100%;
     background: rgb(230, 230, 230);
     border: none;
-    padding: 15px;  
+      
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -163,27 +163,34 @@ footer p {
 }
 
 @media screen and (min-width:768px) {
-    .contactset {
-        display: flex;
-        max-width: 650px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
    
-    
-    .contactset label {
-        float: left;
-        width: 25%;
-        margin-top: 35px;
-        
+    .contactinfo {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .contactset {
+        padding-left: 0;
+    }
+    .contactset .row {
+        flex-direction: row;
+    }
+    .contactset label  {
+        flex-basis: 25%;
+        margin-top: 10px;
     }
     .contactset input,
     .contactset select {
-        width: 75%;
+        flex-basis: 75%;
+        margin-bottom: 10px;
     }
 
-    .newsletterfield {
+    .contactset input#user-zip {
+        flex-basis: 20%;
+    }
+    .newsletterfield,
+    .newsletterfield textarea {
         width: 650px;
+        max-width: 650px;
     }
 
     .topborderline {
